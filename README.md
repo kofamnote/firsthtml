@@ -1,3 +1,3 @@
 ```
-https://kofamnote.github.io/webstudy/
+[a link](https://kofamnote.github.io/webstudy)
 ```
