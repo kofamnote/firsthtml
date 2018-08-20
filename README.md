@@ -10,6 +10,6 @@ The Web Study site
 --------
 [https://kofamnote.github.io/webstudy/opentutorials](https://kofamnote.github.io/webstudy/opentutorials)
 
-Inflearn
+인프런
 --------
 [https://kofamnote.github.io/webstudy/inflearn](https://kofamnote.github.io/webstudy/inflearn)
