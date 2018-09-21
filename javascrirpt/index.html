@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>자바스크립트</title>
+</head>
+
+<body>
+
+    <div id="console">
+
+    </div>
+
+    <script type="text/javascript">
+        /*
+            primitive
+        */
+        // number
+        var money;
+        money = 4000;
+
+        // string
+        var name;
+        name = "KO";
+        name = name + " Daeguen";
+
+        // bool
+        var boolean = false;
+        boolean = true;
+
+        /*
+            complex
+        */
+        // array
+        var animal = ['CAT', 'DOG'];
+        var animal = new Array();
+        animal[0] = 'CAT';
+        animal[1] = 'DOG';
+
+        // object
+        var object = {
+            name: "KO",
+            gender: "M"
+        };
+        var object = new Object();
+        object.name = "KO";
+        object.gender = "M";
+
+        document.getElementById('console').innerHTML = object.name + " : " + object.gender;
+
+    </script>
+
+</body>
+
+</html>

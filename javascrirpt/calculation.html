@@ -1,0 +1,113 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>자바스크립트</title>
+</head>
+
+<body>
+
+    <h3>연산</h3>
+    <p id="console1">
+
+    </p>
+
+    <h3>조건</h3>
+    <p id="console2">
+
+    </p>
+
+    <script type="text/javascript">
+        /*
+            연산
+        */
+
+        //사용자 입력 후 숫자로 변환
+        var a = prompt("연산할 숫자를 입력해주세요.");
+        a = Number(a);
+        var b = prompt("연산할 숫자를 하나 더 입력해주세요.");
+        b = Number(b);
+
+        document.getElementById('console1').innerHTML += a + ", " + b;
+        document.getElementById('console1').innerHTML += "<br>";
+
+        var add = a + b;
+        var min = a - b;
+        var mul = a * b;
+        var div = a / b;
+        var rem = a % b;
+
+        document.getElementById('console1').innerHTML += "더하기 : " + a + " + " + b + " = " + add;
+        document.getElementById('console1').innerHTML += "<br>";
+        document.getElementById('console1').innerHTML += "빼기 : " + a + " - " + b + " = " + min;
+        document.getElementById('console1').innerHTML += "<br>";
+        document.getElementById('console1').innerHTML += "곱하기 : " + a + " * " + b + " = " + mul;
+        document.getElementById('console1').innerHTML += "<br>";
+        document.getElementById('console1').innerHTML += "나누기(몫) : " + a + " / " + b + " = " + div;
+        document.getElementById('console1').innerHTML += "<br>";
+        document.getElementById('console1').innerHTML += "나누기(나머지) : " + a + " % " + b + " = " + rem;
+        document.getElementById('console1').innerHTML += "<br>";
+
+
+
+        /*
+            조건문
+        */
+
+        //사용자 입력 후 숫자로 변환
+        var money = prompt("Money를 입력해주세요");
+        money = Number(money);
+
+        document.getElementById('console2').innerHTML += money;
+        document.getElementById('console2').innerHTML += "<br>";
+
+        // IF 단일 조건
+        if (money > 500) {
+            document.getElementById('console2').innerHTML += "Money는 500보다 큽니다.";
+            document.getElementById('console2').innerHTML += "<br>";
+
+        } else if (money == 500) {
+            document.getElementById('console2').innerHTML += "Money는 500입니다.";
+            document.getElementById('console2').innerHTML += "<br>";
+
+        } else {
+            document.getElementById('console2').innerHTML += "Money는 500보다 작습니다.";
+            document.getElementById('console2').innerHTML += "<br>";
+        }
+
+        // IF 복수 조건 - AND(&&), OR(||)
+        if (500 <= money || money <= 1000) {
+            document.getElementById('console2').innerHTML += "Money는 500과 1000사이입니다.";
+            document.getElementById('console2').innerHTML += "<br>";
+
+        } else {
+            document.getElementById('console2').innerHTML += "Money는 500과 1000사이가 아닙니다.";
+            document.getElementById('console2').innerHTML += "<br>";
+
+        }
+
+        switch (money) {
+            case 100:
+                document.getElementById('console2').innerHTML += "100원은 껌을 살 수 있습니다.";
+                document.getElementById('console2').innerHTML += "<br>";
+                break;
+            case 500:
+                document.getElementById('console2').innerHTML += "500원은 과자를 살 수 있습니다.";
+                document.getElementById('console2').innerHTML += "<br>";
+                break;
+            case 1000:
+                document.getElementById('console2').innerHTML += "1000원은 음료수를 살 수 있습니다.";
+                document.getElementById('console2').innerHTML += "<br>";
+                break;
+            default:
+                document.getElementById('console2').innerHTML += "100,500,1000외에는 구매할 수 없습니다.";
+                document.getElementById('console2').innerHTML += "<br>";
+                break;
+        }
+
+
+    </script>
+
+</body>
+
+</html>
