@@ -6,15 +6,12 @@
 </head>
 
 <body>
-
     <h3>연산</h3>
     <p id="console1">
-
     </p>
 
     <h3>조건</h3>
     <p id="console2">
-
     </p>
 
     <script type="text/javascript">
@@ -43,7 +40,7 @@
         document.getElementById('console1').innerHTML += "<br>";
         document.getElementById('console1').innerHTML += "곱하기 : " + a + " * " + b + " = " + mul;
         document.getElementById('console1').innerHTML += "<br>";
-        document.getElementById('console1').innerHTML += "나누기(몫) : " + a + " / " + b + " = " + div;
+        document.getElementById('console1').innerHTML += "나누기 : " + a + " / " + b + " = " + div;
         document.getElementById('console1').innerHTML += "<br>";
         document.getElementById('console1').innerHTML += "나누기(나머지) : " + a + " % " + b + " = " + rem;
         document.getElementById('console1').innerHTML += "<br>";
@@ -76,7 +73,7 @@
         }
 
         // IF 복수 조건 - AND(&&), OR(||)
-        if (500 <= money || money <= 1000) {
+        if (500 <= money && money <= 1000) {
             document.getElementById('console2').innerHTML += "Money는 500과 1000사이입니다.";
             document.getElementById('console2').innerHTML += "<br>";
 
@@ -100,11 +97,10 @@
                 document.getElementById('console2').innerHTML += "<br>";
                 break;
             default:
-                document.getElementById('console2').innerHTML += "100,500,1000외에는 구매할 수 없습니다.";
+                document.getElementById('console2').innerHTML += "100, 500, 1000외에는 구매할 수 없습니다.";
                 document.getElementById('console2').innerHTML += "<br>";
                 break;
         }
-
 
     </script>
 
